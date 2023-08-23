@@ -41,3 +41,14 @@ Q
 !src/main/resources/env_config.yml,9\8\987ac3ede1c68edc8aa1427bf3e4c63cb34aba3f
 Z
 *src/test/resources/features/SignIn.feature,1\6\16c1ee486f61e8d17a07533972a3c25f1bad922a
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+d
+4src/main/java/tek/sdet/framework/base/BaseSetup.java,9\2\9247360ce030176d7ab4c4f171164b676c4233be
+n
+>src/test/java/tek/sdet/framework/steps/RetailAccountSteps.java,0\1\013b3a0e58f9aae1075e6d67f28e390674d0c8d0
+g
+7src/test/java/tek/sdet/framework/steps/SignInSteps.java,7\3\73106a47b57099855bf00de765b0e53c00986416
+]
+-src/test/resources/features/Orderpage.feature,4\9\49fb65548d46c7d4205359d4679c9fea27477df9
