@@ -17,8 +17,6 @@ b
 2src/test/java/tek/sdet/framework/pages/SignIn.java,f\3\f34a32857a4df97072a0a24857099ba0c6008a25
 e
 5src/test/java/tek/sdet/framework/base/BaseUITest.java,3\4\34f8cb834fc60580679708dc2bfb207be07fc221
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 f
 6src/test/java/tek/sdet/framework/pages/PomFactory.java,7\8\782620864b1a08b617209d6d6dc35299c701e69b
 \
