@@ -41,9 +41,6 @@ Q
 !src/main/resources/env_config.yml,9\8\987ac3ede1c68edc8aa1427bf3e4c63cb34aba3f
 Z
 *src/test/resources/features/SignIn.feature,1\6\16c1ee486f61e8d17a07533972a3c25f1bad922a
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 d
 4src/main/java/tek/sdet/framework/base/BaseSetup.java,9\2\9247360ce030176d7ab4c4f171164b676c4233be
 n
