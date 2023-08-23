@@ -3747,3 +3747,13 @@
 2023-08-23 17:41:36,296 [main] INFO logger_file - User was successfully send keys to the fields.
 2023-08-23 17:41:36,402 [main] INFO logger_file - User was successfully signed up
 2023-08-23 17:41:36,780 [main] INFO logger_file - User was successfully on his/her profile
+2023-08-23 17:54:52,132 [main] INFO logger_file - Tek school logo is displayed
+2023-08-23 17:54:52,631 [main] INFO logger_file - User was Successfully signed in
+2023-08-23 17:54:52,962 [main] INFO logger_file - Email and password were entered successfully
+2023-08-23 17:54:53,077 [main] INFO logger_file - User was successfully logged in
+2023-08-23 17:54:53,108 [main] INFO logger_file - Login button is displayed
+2023-08-23 17:54:57,310 [main] INFO logger_file - Tek school logo is displayed
+2023-08-23 17:54:58,051 [main] INFO logger_file - User was Successfully signed in
+2023-08-23 17:54:58,170 [main] INFO logger_file - User was successfully clicked on create new account
+2023-08-23 17:54:58,673 [main] INFO logger_file - User was successfully send keys to the fields.
+2023-08-23 17:54:58,787 [main] INFO logger_file - User was successfully signed up
