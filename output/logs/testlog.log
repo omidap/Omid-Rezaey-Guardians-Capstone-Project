@@ -3877,3 +3877,33 @@
 2023-08-23 18:38:21,331 - logger_file -INFO - The option Smart Home is present
 2023-08-23 18:38:21,378 - logger_file -INFO - The option Sports is present
 2023-08-23 18:38:21,467 - logger_file -INFO - The option Automative is present
+2023-08-23 19:33:53,073 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:33:53,176 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:33:53,406 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:33:59,436 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:33:59,751 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:33:59,926 - logger_file -INFO - User is on [[EdgeDriver: msedge on WINDOWS (bdc1d94a9b9b60f49f0c1505b605bb3a)] -> css selector: div.sidebar__content span]
+2023-08-23 19:34:00,017 - logger_file -INFO - The option TV & Video is present
+2023-08-23 19:34:00,055 - logger_file -INFO - The option Video Games is present
+2023-08-23 19:34:05,932 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:34:06,469 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:34:06,647 - logger_file -INFO - User is on [[EdgeDriver: msedge on WINDOWS (63bfb9016daa74cbf299ef90fc2a45cf)] -> css selector: div.sidebar__content span]
+2023-08-23 19:34:06,743 - logger_file -INFO - The option Accessories is present
+2023-08-23 19:34:06,790 - logger_file -INFO - The option Networking is present
+2023-08-23 19:34:13,220 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:34:13,496 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:34:13,719 - logger_file -INFO - User is on [[EdgeDriver: msedge on WINDOWS (121ef5b0d81b43b707c286e7c867748e)] -> css selector: div.sidebar__content span]
+2023-08-23 19:34:13,808 - logger_file -INFO - The option Smart Home Lightning is present
+2023-08-23 19:34:13,852 - logger_file -INFO - The option Plugs and Outlets is present
+2023-08-23 19:34:19,709 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:34:19,991 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:34:20,223 - logger_file -INFO - User is on [[EdgeDriver: msedge on WINDOWS (be506f723a10b0defba07d4bf43cc7b4)] -> css selector: div.sidebar__content span]
+2023-08-23 19:34:20,314 - logger_file -INFO - The option Athletic Clothing is present
+2023-08-23 19:34:20,360 - logger_file -INFO - The option Exercise & Fitness is present
+2023-08-23 19:34:25,677 - logger_file -INFO - Tek school logo is displayed
+2023-08-23 19:34:26,449 - logger_file -INFO - User was successfully clicked on all section
+2023-08-23 19:34:26,704 - logger_file -INFO - The option Electronics is present
+2023-08-23 19:34:26,746 - logger_file -INFO - The option Computers is present
+2023-08-23 19:34:26,790 - logger_file -INFO - The option Smart Home is present
+2023-08-23 19:34:26,837 - logger_file -INFO - The option Sports is present
+2023-08-23 19:34:26,879 - logger_file -INFO - The option Automative is present
