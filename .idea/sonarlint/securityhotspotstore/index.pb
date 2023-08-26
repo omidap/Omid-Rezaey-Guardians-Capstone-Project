@@ -41,6 +41,3 @@ m
 =src/main/java/tek/sdet/framework/utilities/ReadYamlFiles.java,e\5\e5e0da21fc58c1d18bccf284ab4a5a64da2cccaf
 f
 6src/test/java/tek/sdet/framework/steps/OrderSteps.java,e\7\e769cb214f8a455983e2799758488d686df96a9e
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
