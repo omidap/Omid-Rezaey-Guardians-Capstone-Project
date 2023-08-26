@@ -71,7 +71,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <includes>*/TestRunner.java</includes>
+                    <includes>
+                        <include>${runner}.java</include>
+                    </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
