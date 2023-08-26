@@ -3997,3 +3997,63 @@
 2023-08-24 17:38:08,592 [main] INFO logger_file - The option Smart Home is present
 2023-08-24 17:38:08,605 [main] INFO logger_file - The option Sports is present
 2023-08-24 17:38:08,619 [main] INFO logger_file - The option Automative is present
+2023-08-26 14:54:17,529 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:17,563 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:18,221 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:25,621 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:26,522 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:26,895 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (df07523b-0aab-4450-a6ae-149f4a2fbcf1)] -> css selector: div.sidebar__content span]
+2023-08-26 14:54:26,941 [main] INFO logger_file - The option TV & Video is present
+2023-08-26 14:54:26,998 [main] INFO logger_file - The option Video Games is present
+2023-08-26 14:54:34,947 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:35,242 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:35,481 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (d1839bd9-da3e-48ae-afe7-c01e5404dfea)] -> css selector: div.sidebar__content span]
+2023-08-26 14:54:35,528 [main] INFO logger_file - The option Accessories is present
+2023-08-26 14:54:35,543 [main] INFO logger_file - The option Networking is present
+2023-08-26 14:54:43,250 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:43,896 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:44,169 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (760e4696-556e-4659-9ef0-9726e50adbd5)] -> css selector: div.sidebar__content span]
+2023-08-26 14:54:44,283 [main] INFO logger_file - The option Smart Home Lightning is present
+2023-08-26 14:54:44,299 [main] INFO logger_file - The option Plugs and Outlets is present
+2023-08-26 14:54:50,864 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:51,670 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:51,936 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (e0a56c51-4a75-46f6-9954-ac5f76ba2f18)] -> css selector: div.sidebar__content span]
+2023-08-26 14:54:51,974 [main] INFO logger_file - The option Athletic Clothing is present
+2023-08-26 14:54:51,988 [main] INFO logger_file - The option Exercise & Fitness is present
+2023-08-26 14:54:58,540 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 14:54:59,487 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 14:54:59,569 [main] INFO logger_file - The option Electronics is present
+2023-08-26 14:54:59,586 [main] INFO logger_file - The option Computers is present
+2023-08-26 14:54:59,600 [main] INFO logger_file - The option Smart Home is present
+2023-08-26 14:54:59,615 [main] INFO logger_file - The option Sports is present
+2023-08-26 14:54:59,630 [main] INFO logger_file - The option Automative is present
+2023-08-26 15:01:44,802 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:01:44,831 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:01:45,651 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:01:50,784 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:01:51,538 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:01:51,770 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (ba81acd6-2c5b-4638-840e-c0f8c9886639)] -> css selector: div.sidebar__content span]
+2023-08-26 15:01:51,818 [main] INFO logger_file - The option TV & Video is present
+2023-08-26 15:01:51,833 [main] INFO logger_file - The option Video Games is present
+2023-08-26 15:01:56,840 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:01:57,657 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:01:57,911 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (d326ec1a-5919-4cbe-9dab-0901ca8e15f2)] -> css selector: div.sidebar__content span]
+2023-08-26 15:01:57,982 [main] INFO logger_file - The option Accessories is present
+2023-08-26 15:01:57,995 [main] INFO logger_file - The option Networking is present
+2023-08-26 15:02:02,747 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:02:03,415 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:02:03,659 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (ba46edcd-a01c-4396-80d5-1cf0062e2220)] -> css selector: div.sidebar__content span]
+2023-08-26 15:02:03,748 [main] INFO logger_file - The option Smart Home Lightning is present
+2023-08-26 15:02:03,794 [main] INFO logger_file - The option Plugs and Outlets is present
+2023-08-26 15:02:08,871 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:02:09,518 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:02:09,764 [main] INFO logger_file - User is on [[FirefoxDriver: firefox on WINDOWS (827daecf-bc16-419c-9d93-019d3b9beedc)] -> css selector: div.sidebar__content span]
+2023-08-26 15:02:09,799 [main] INFO logger_file - The option Athletic Clothing is present
+2023-08-26 15:02:09,812 [main] INFO logger_file - The option Exercise & Fitness is present
+2023-08-26 15:02:14,641 [main] INFO logger_file - Tek school logo is displayed
+2023-08-26 15:02:15,422 [main] INFO logger_file - User was successfully clicked on all section
+2023-08-26 15:02:15,494 [main] INFO logger_file - The option Electronics is present
+2023-08-26 15:02:15,516 [main] INFO logger_file - The option Computers is present
+2023-08-26 15:02:15,544 [main] INFO logger_file - The option Smart Home is present
+2023-08-26 15:02:15,562 [main] INFO logger_file - The option Sports is present
+2023-08-26 15:02:15,575 [main] INFO logger_file - The option Automative is present

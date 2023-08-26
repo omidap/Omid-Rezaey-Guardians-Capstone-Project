@@ -61,7 +61,11 @@ public class BaseSetup {
                 webDriver = browser.openBrowser(url);
             }
             case "firefox" -> {
-                browser = new FireFoxBrowser();
+                if ((boolean) uiProperties.get("headless")) {
+                    browser = new FirefoxHeadless();
+                } else {
+                    browser = new FireFoxBrowser();
+                }
                 webDriver = browser.openBrowser(url);
             }
             case "edge" -> {
