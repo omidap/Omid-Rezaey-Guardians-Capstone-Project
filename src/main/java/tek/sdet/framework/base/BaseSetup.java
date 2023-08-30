@@ -52,32 +52,46 @@ public class BaseSetup {
         String url = uiProperties.get("url").toString().toLowerCase();
         Browser browser;
         switch (uiProperties.get("browser").toString().toLowerCase()) {
-            case "chrome" -> {
+            case "chrome":
                 if ((boolean) uiProperties.get("headless")) {
                     browser = new ChromeHeadless();
                 } else {
                     browser = new ChromeBrowser();
                 }
                 webDriver = browser.openBrowser(url);
-            }
-            case "firefox" -> {
+                break;
+            case "firefox":
                 if ((boolean) uiProperties.get("headless")) {
                     browser = new FirefoxHeadless();
                 } else {
                     browser = new FireFoxBrowser();
                 }
                 webDriver = browser.openBrowser(url);
-            }
-            case "edge" -> {
+                break;
+            case "edge":
                 browser = new EdgeBrowser();
                 webDriver = browser.openBrowser(url);
-            }
-            default -> throw new RuntimeException("Browser name in config file did not match any of the cases");
+                break;
+            default:
+                throw new RuntimeException("Browser name in config file did not match any of the cases");
+
         }
 
-        webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+        webDriver.manage().
+
+                window().
+
+                maximize();
+        webDriver.manage().
+
+                timeouts().
+
+                pageLoadTimeout(Duration.ofSeconds(60));
+        webDriver.manage().
+
+                timeouts().
+
+                implicitlyWait(Duration.ofSeconds(60));
 
     }
 
