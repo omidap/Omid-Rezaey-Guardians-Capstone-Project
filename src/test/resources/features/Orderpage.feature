@@ -1,4 +1,4 @@
-@OrderRegression
+@regression
 Feature: Retail Order Page
 
   @UserAddItem

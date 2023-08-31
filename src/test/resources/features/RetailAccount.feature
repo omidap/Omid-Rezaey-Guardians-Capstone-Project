@@ -1,4 +1,4 @@
-@RetailRegression
+@regression
 Feature: Retail Account Page
 
   Background:

@@ -1,4 +1,4 @@
-@regressionlogin
+@regression
 Feature: Sign in Feature
 
   @signin

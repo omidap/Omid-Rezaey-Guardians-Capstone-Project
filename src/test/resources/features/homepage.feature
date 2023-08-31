@@ -1,4 +1,4 @@
-@regressionHomepage
+@regression
 Feature: Retail Home Page
 
   Background: Verify user is on the home page
