@@ -1,4 +1,4 @@
-@regression
+@smoke
 Feature: Retail Home Page
 
   Background: Verify user is on the home page

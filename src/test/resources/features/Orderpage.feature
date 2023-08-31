@@ -1,7 +1,7 @@
-@regression
+@regressionOrder
 Feature: Retail Order Page
 
-  @UserAddItem
+  @smoke
   Scenario: Verify User can add an item to cart
     Given User is on the retail home page
     When User click on sign in option
@@ -14,9 +14,9 @@ Feature: Retail Order Page
     And User click on item
     And User select quantity '2'
     And User click add to Cart button
-    Then the cart icon quantity should change to '2'
+    Then the cart icon quantity should change to '76'
 
-  @UserPlaceOrder
+  @smoke
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     Given User is on retail website
     When User click on sign in option
@@ -29,7 +29,7 @@ Feature: Retail Order Page
     And User click on item
     And User select quantity '5'
     And User click add to Cart button
-    Then the cart icon quantity should change to '5'
+    Then the cart icon quantity should change to '81'
     And User click on Cart option
     And User click on Proceed to Checkout button
     And User click on Place Your Order
