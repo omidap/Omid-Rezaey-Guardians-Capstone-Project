@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import tek.sdet.framework.config.*;
 import tek.sdet.framework.utilities.ReadYamlFiles;
 
+import java.io.FileNotFoundException;
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 
 public class BaseSetup {
@@ -15,41 +17,28 @@ public class BaseSetup {
     public static Logger logger;
 
     public BaseSetup() {
-
-        //we need the path to env_config.yml file and store it in a String variable
-        //user.dir means user directory
-        String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\env_config.yml";
-
-        //we need the path to the log4j.properties file and store it in a String variable
-        String log4jPath = System.getProperty("user.dir") + "\\src\\main\\resources\\log4j.properties";
-
-        //We get an instance of the project configuration file (env_config file)
+        String filePath = System.getProperty("user.dir") + "/src/main/resources/env_config.yml";
+        String log4JPath = System.getProperty("user.dir") + "/src/main/resources/log4j.properties";
         try {
             environmentVariables = ReadYamlFiles.getInstance(filePath);
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             logger.info("Failed for Load environment context. check possible file path errors");
-            throw new RuntimeException("Failed to load env_config file: " + e.getMessage());
+            throw new RuntimeException("Failed for Load environment context with message " + e.getMessage());
         }
-        //initialize our logger
-        //configure our log4j using the PropertyConfigurator class
-        logger = logger.getLogger("logger_file");
-        PropertyConfigurator.configure(log4jPath);
+
+        logger = logger.getLogger("logger_File");
+        PropertyConfigurator.configure(log4JPath);
 
     }
 
-    //This method will return a instance of WebDriver,
-    //it is same as in selenium we used the reference to WebDriver instance (driver)
     public WebDriver getDriver() {
         return webDriver;
     }
 
-    //to get the environment configuration from the env_config file and setup browser
-    //when setting-up browser, make sure to import your Browser interface and browser classes
-    //from the config package where you create the interface and browser classes
     public void setupBrowser() {
-
         HashMap uiProperties = environmentVariables.getYamlProperty("ui");
-        String url = uiProperties.get("url").toString().toLowerCase();
+        System.out.println(uiProperties);
+        String url = uiProperties.get("url").toString();
         Browser browser;
         switch (uiProperties.get("browser").toString().toLowerCase()) {
             case "chrome":
@@ -73,29 +62,15 @@ public class BaseSetup {
                 webDriver = browser.openBrowser(url);
                 break;
             default:
-                throw new RuntimeException("Browser name in config file did not match any of the cases");
-
+                throw new RuntimeException("Unknown Browser check environment properties");
         }
+        webDriver.manage().window().maximize();
+        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        webDriver.manage().timeouts().implicitlyWait(Duration.of(20, ChronoUnit.SECONDS));
 
-        webDriver.manage().
-
-                window().
-
-                maximize();
-        webDriver.manage().
-
-                timeouts().
-
-                pageLoadTimeout(Duration.ofSeconds(60));
-        webDriver.manage().
-
-                timeouts().
-
-                implicitlyWait(Duration.ofSeconds(60));
 
     }
 
-    //close the browser(s)
     public void quitBrowser() {
         if (webDriver != null)
             webDriver.quit();

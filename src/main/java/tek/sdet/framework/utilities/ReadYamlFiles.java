@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class ReadYamlFiles {
     private static ReadYamlFiles readYamlFiles;
-    private final HashMap propertyMap;
+    private HashMap propertyMap;
 
     private ReadYamlFiles(String filepath) throws FileNotFoundException {
         FileInputStream fileInputStream = FileUtility.getFileInputStream(filepath);
