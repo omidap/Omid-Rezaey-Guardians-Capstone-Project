@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @smoke
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'Smaili' and Phone '2405553436'
+    And User update Name 'Smaile' and Phone '2405553436'
     And User click on Update button
     Then user profile information should be updated
 
