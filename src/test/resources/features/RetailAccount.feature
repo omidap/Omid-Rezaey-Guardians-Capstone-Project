@@ -1,4 +1,4 @@
-@regressionAccount
+@regression
 Feature: Retail Account Page
 
   Background:
@@ -11,17 +11,17 @@ Feature: Retail Account Page
   @smoke
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'Smaile' and Phone '2405553436'
+    And User update Name 'firstName' and Phone 'phone'
     And User click on Update button
     Then user profile information should be updated
 
-  @smoke
+  @useraddpayment
   Scenario: Verify User can add a payment method
     When User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
-      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1223455667781234 | Guardian   | 12              | 25             | 888          |
+      | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
+      | debit      | NameOnCard | expMonth        | expYear        | CCV          |
     And User click on Add your card button
     Then a message should be displayed ‘Payment Method added successfully’
 
@@ -30,8 +30,8 @@ Feature: Retail Account Page
     When User click on Account option
     And User click on Edit option of card section
     And user edit information with below data
-      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1223455667781235 | Guardian   | 9               | 2028           | 777          |
+      | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
+      | debit      | NameOnCard | expMonth        | expYear        | CCV          |
     And user click on Update Your Card button
     Then a message should be displayed ‘Payment Method updated Successfully’
 
@@ -46,8 +46,8 @@ Feature: Retail Account Page
     When User click on Account option
     And User click on Add address option
     And user fill new address form with below information
-      | country          | fullName | phoneNumber | streetAddress | apt      | city   | state | zipCode |
-      | 1223455667734163 | John Doe | 2053434864  | 1234          | building | Valkan | Idaho | 20444   |
+      | country | fullName | phoneNumber | streetAddress | apt | city | state | zipCode |
+      | debit   | fullName | phone       | street        | apt | city | state | zipCode |
     And User click Add Your Address button
     Then a message should be displayed ‘Address Added Successfully’
 
@@ -56,8 +56,8 @@ Feature: Retail Account Page
     When User click on Account option
     And User click on edit address option
     And user fill new address form with below information
-      | country          | fullName | phoneNumber | streetAddress | apt | city    | state   | zipCode |
-      | 1223455667781235 | John Doe | 2053634934  | 1264          | apt | Phoenix | Arizona | 20446   |
+      | country | fullName | phoneNumber | streetAddress | apt | city | state | zipCode |
+      | country | fullName | phone       | street        | apt | city | state | zipCode |
     And User click update Your Address button
     Then a message should be displayed ‘Address Updated Successfully’
 

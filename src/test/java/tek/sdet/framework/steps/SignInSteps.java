@@ -9,8 +9,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import tek.sdet.framework.pages.PomFactory;
 import tek.sdet.framework.utilities.CommonUtility;
+import tek.sdet.framework.utilities.DataProvider;
 
 import java.util.List;
+import java.util.Map;
 
 public class SignInSteps extends CommonUtility {
 
@@ -58,14 +60,18 @@ public class SignInSteps extends CommonUtility {
     @When("User fill the signUp information with below date")
     public void userFillTheSignUpInformationWithBelowDate(DataTable dataTable) {
         // the cells() method is iterated through the data table.
-        List<List<String>> users = dataTable.asLists(String.class);
-        for (List<String> user : users) {
-            factory.getDriver().findElement(By.cssSelector("input#nameInput")).sendKeys(user.get(0));
-            factory.getDriver().findElement(By.cssSelector("input#emailInput")).sendKeys(user.get(1));
-            factory.getDriver().findElement(By.cssSelector("input#passwordInput")).sendKeys(user.get(2));
-            factory.getDriver().findElement(By.cssSelector("input#confirmPasswordInput")).sendKeys(user.get(3));
-            logger.info("User was successfully send keys to the fields.");
-        }
+        List<Map<String, String>> users = dataTable.asMaps(String.class, String.class);
+
+        factory.getDriver().findElement(By.cssSelector("input#nameInput"))
+                .sendKeys(DataProvider.dataProvider(users.get(0).get("firstName")));
+        factory.getDriver().findElement(By.cssSelector("input#emailInput"))
+                .sendKeys(DataProvider.dataProvider(users.get(0).get("email")));
+        factory.getDriver().findElement(By.cssSelector("input#passwordInput"))
+                .sendKeys(users.get(0).get("password"));
+        factory.getDriver().findElement(By.cssSelector("input#confirmPasswordInput"))
+                .sendKeys(users.get(0).get("confirmPassword"));
+        logger.info("User was successfully send keys to the fields.");
+
     }
 
 

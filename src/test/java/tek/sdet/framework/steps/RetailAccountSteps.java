@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import tek.sdet.framework.pages.PomFactory;
 import tek.sdet.framework.utilities.CommonUtility;
+import tek.sdet.framework.utilities.DataProvider;
 
 import java.util.List;
 import java.util.Map;
@@ -26,10 +27,10 @@ public class RetailAccountSteps extends CommonUtility {
     @And("User update Name {string} and Phone {string}")
     public void userUpdateNameAndPhoneValues(String name, String phone) {
         clearTextUsingSendKeys(factory.getAccountPage().nameInput);
-        sendText(factory.getAccountPage().nameInput, name);
+        sendText(factory.getAccountPage().nameInput, DataProvider.dataProvider(name));
         logger.info("User was updated his/her name value successfully");
         clearTextUsingSendKeys(factory.getAccountPage().personalPhoneInput);
-        sendText(factory.getAccountPage().personalPhoneInput, phone);
+        sendText(factory.getAccountPage().personalPhoneInput, DataProvider.dataProvider(phone));
         logger.info("User was updated his/her phone values successfully.");
     }
 
@@ -56,11 +57,16 @@ public class RetailAccountSteps extends CommonUtility {
     @And("User fill Debit or credit card information")
     public void userFillDebitOrCreditCard(DataTable dataTable) {
         List<Map<String, String>> map = dataTable.asMaps(String.class, String.class);
-        sendText(factory.getAccountPage().cardNumber, map.get(0).get("cardNumber"));
-        sendText(factory.getAccountPage().nameOnCard, map.get(0).get("nameOnCard"));
-        sendText(factory.getAccountPage().expirationMonth, map.get(0).get("expirationMonth"));
-        sendText(factory.getAccountPage().expirationYear, map.get(0).get("expirationYear"));
-        sendText(factory.getAccountPage().ccvCode, map.get(0).get("securityCode"));
+        sendText(factory.getAccountPage().cardNumber,
+                DataProvider.dataProvider(map.get(0).get("cardNumber")));
+        sendText(factory.getAccountPage().nameOnCard,
+                DataProvider.dataProvider(map.get(0).get("nameOnCard")));
+        sendText(factory.getAccountPage().expirationMonth,
+                DataProvider.dataProvider(map.get(0).get("expirationMonth")));
+        sendText(factory.getAccountPage().expirationYear,
+                DataProvider.dataProvider(map.get(0).get("expirationYear")));
+        sendText(factory.getAccountPage().ccvCode,
+                DataProvider.dataProvider(map.get(0).get("securityCode")));
 
         logger.info("User card information added successfully");
     }
@@ -92,15 +98,20 @@ public class RetailAccountSteps extends CommonUtility {
     public void userEditInformationWithBelowData(DataTable dataTable) {
         List<Map<String, String>> map = dataTable.asMaps(String.class, String.class);
         clearTextUsingSendKeys(factory.getAccountPage().cardNumber);
-        sendText(factory.getAccountPage().cardNumber, map.get(0).get("cardNumber"));
+        sendText(factory.getAccountPage().cardNumber,
+                DataProvider.dataProvider(map.get(0).get("cardNumber")));
         clearTextUsingSendKeys(factory.getAccountPage().nameOnCard);
-        sendText(factory.getAccountPage().nameOnCard, map.get(0).get("nameOnCard"));
+        sendText(factory.getAccountPage().nameOnCard,
+                DataProvider.dataProvider(map.get(0).get("nameOnCard")));
         clearTextUsingSendKeys(factory.getAccountPage().expirationMonth);
-        selectByVisibleText(factory.getAccountPage().expirationMonth, map.get(0).get("expirationMonth"));
+        selectByVisibleText(factory.getAccountPage().expirationMonth,
+                DataProvider.dataProvider(map.get(0).get("expirationMonth")));
         clearTextUsingSendKeys(factory.getAccountPage().expirationYear);
-        selectByVisibleText(factory.getAccountPage().expirationYear, map.get(0).get("expirationYear"));
+        selectByVisibleText(factory.getAccountPage().expirationYear,
+                DataProvider.dataProvider(map.get(0).get("expirationYear")));
         clearTextUsingSendKeys(factory.getAccountPage().ccvCode);
-        sendText(factory.getAccountPage().ccvCode, map.get(0).get("securityCode"));
+        sendText(factory.getAccountPage().ccvCode,
+                DataProvider.dataProvider(map.get(0).get("securityCode")));
 
         logger.info("User card information added successfully");
     }
@@ -150,21 +161,29 @@ public class RetailAccountSteps extends CommonUtility {
     public void userFillNewAddress(DataTable dataTable) {
         List<Map<String, String>> map = dataTable.asMaps(String.class, String.class);
         clearTextUsingSendKeys(factory.getAccountPage().countryDropdown);
-        sendText(factory.getAccountPage().countryDropdown, map.get(0).get("country"));
+        sendText(factory.getAccountPage().countryDropdown,
+                DataProvider.dataProvider(map.get(0).get("country")));
         clearTextUsingSendKeys(factory.getAccountPage().fullNameInput);
-        sendText(factory.getAccountPage().fullNameInput, map.get(0).get("fullName"));
+        sendText(factory.getAccountPage().fullNameInput,
+                DataProvider.dataProvider(map.get(0).get("fullName")));
         clearTextUsingSendKeys(factory.getAccountPage().phoneNumberInput);
-        sendText(factory.getAccountPage().phoneNumberInput, map.get(0).get("phoneNumber"));
+        sendText(factory.getAccountPage().phoneNumberInput,
+                DataProvider.dataProvider(map.get(0).get("phoneNumber")));
         clearTextUsingSendKeys(factory.getAccountPage().streetInput);
-        sendText(factory.getAccountPage().streetInput, map.get(0).get("streetAddress"));
+        sendText(factory.getAccountPage().streetInput,
+                DataProvider.dataProvider(map.get(0).get("streetAddress")));
         clearTextUsingSendKeys(factory.getAccountPage().apartmentInput);
-        sendText(factory.getAccountPage().apartmentInput, map.get(0).get("apt"));
+        sendText(factory.getAccountPage().apartmentInput,
+                DataProvider.dataProvider(map.get(0).get("apt")));
         clearTextUsingSendKeys(factory.getAccountPage().cityInput);
-        sendText(factory.getAccountPage().cityInput, map.get(0).get("city"));
+        sendText(factory.getAccountPage().cityInput,
+                DataProvider.dataProvider(map.get(0).get("city")));
         clearTextUsingSendKeys(factory.getAccountPage().state);
-        sendText(factory.getAccountPage().state, map.get(0).get("state"));
+        sendText(factory.getAccountPage().state,
+                DataProvider.dataProvider(map.get(0).get("state")));
         clearTextUsingSendKeys(factory.getAccountPage().zipCodeInput);
-        sendText(factory.getAccountPage().zipCodeInput, map.get(0).get("zipCode"));
+        sendText(factory.getAccountPage().zipCodeInput,
+                DataProvider.dataProvider(map.get(0).get("zipCode")));
         logger.info("User was entered his/her info successfully");
     }
 
