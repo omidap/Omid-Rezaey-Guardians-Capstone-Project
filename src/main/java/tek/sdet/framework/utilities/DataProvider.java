@@ -47,8 +47,8 @@ public class DataProvider {
             data = String.valueOf(result);
         } else if (provider.equalsIgnoreCase("CCV")) {
             int result = 0;
-            for (int i = 0; i < 3; i++) {
-                result = result * 10 + rand.nextInt(10);
+            for (int i = 0; i < 2; i++) {
+                result = result * 10 + rand.nextInt(100);
             }
             data = String.valueOf(result);
         } else if (provider.equalsIgnoreCase("NameOnCard")) {

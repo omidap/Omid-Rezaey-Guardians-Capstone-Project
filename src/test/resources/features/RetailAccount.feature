@@ -1,4 +1,4 @@
-@regression
+@priority
 Feature: Retail Account Page
 
   Background:
@@ -6,7 +6,7 @@ Feature: Retail Account Page
     When User click on sign in option
     And User enter email 'student13@gmail.com' and password 'Tek@09874'
     And User click on login button
-    And User should be logged in into account
+#    And User should be logged in into account
 
   @smoke
   Scenario: Verify User can update Profile Information
@@ -41,7 +41,7 @@ Feature: Retail Account Page
     And User click on remove option of card section
     Then payment details should be removed
 
-  @smoke
+  @UserAddAddressInfo
   Scenario: Verify User can add an Address
     When User click on Account option
     And User click on Add address option

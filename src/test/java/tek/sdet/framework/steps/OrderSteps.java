@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import tek.sdet.framework.pages.PomFactory;
 import tek.sdet.framework.utilities.CommonUtility;
@@ -13,7 +14,6 @@ import java.util.List;
 public class OrderSteps extends CommonUtility {
 
     PomFactory factory = new PomFactory();
-
 
     @When("User change the category to {string}")
     public void userChangeTheCategoryTo(String category) {
@@ -92,7 +92,9 @@ public class OrderSteps extends CommonUtility {
     public void clickOnFirstOrder() {
         List<WebElement> elements = factory.getOrderPage().N0listOfItems;
         for (WebElement element : elements) {
-            if (!element.getText().equalsIgnoreCase("Hide Details")) {
+            if (element.getText().equalsIgnoreCase("Cancelled")) {
+                logger.info("There is no order selected");
+            } else if (!element.getText().equalsIgnoreCase("Hide Details")) {
                 click(element);
             }
         }
@@ -101,8 +103,10 @@ public class OrderSteps extends CommonUtility {
     //UserCancelOrder
     @And("User click on Cancel The Order button")
     public void cancelOrder() {
-        List<WebElement> elements = factory.getOrderPage().cancelBtn;
-        click(elements.get(0));
+        WebElement elements = factory.getOrderPage().cancelBtn;
+
+        click(elements);
+
         //cancel all orders
 //		for(int i = 0; i < cancelBtns.size(); i++) {
 //			click(cancelBtns.get(i));
@@ -134,8 +138,9 @@ public class OrderSteps extends CommonUtility {
     //UserReturnOrder
     @And("User click on Return Items button")
     public void returnItems() {
-        List<WebElement> returnItems = factory.getOrderPage().returnOrder;
-        click(returnItems.get(0));
+
+        WebElement returnItems = factory.getOrderPage().returnOrder;
+        click(returnItems);
         logger.info("User clicked on return order button");
     }
 

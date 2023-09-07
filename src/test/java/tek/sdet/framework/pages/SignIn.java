@@ -27,18 +27,6 @@ public class SignIn extends BaseSetup {
     @FindBy(id = "newAccountBtn")
     public WebElement newAccountBtn;
 
-    @FindBy(id = "nameInput")
-    public WebElement nameInput;
-
-    @FindBy(css = "input#emailInput")
-    public WebElement emailInput;
-
-    @FindBy(css = "input#passwordInput")
-    public WebElement passwordInput;
-
-    @FindBy(css = "input#confirmPasswordInput")
-    public WebElement confirmPasswordInput;
-
     @FindBy(id = "signupBtn")
     public WebElement signUpBtn;
 

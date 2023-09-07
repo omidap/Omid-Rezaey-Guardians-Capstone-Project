@@ -49,8 +49,11 @@ public class Order extends BaseSetup {
     @FindBy(xpath = "//div[@class='order'] //descendant::p[7]")
     public List<WebElement> N0listOfItems;
 
+    @FindBy(xpath = "//p[text()='Cancelled']")
+    public WebElement cancelledLbl;
+
     @FindBy(css = "button#cancelBtn")
-    public List<WebElement> cancelBtn;
+    public WebElement cancelBtn;
 
     @FindBy(css = "select#reasonInput")
     public WebElement reason;
@@ -61,7 +64,7 @@ public class Order extends BaseSetup {
 
     //UserReturnOrder
     @FindBy(css = "button#returnBtn")
-    public List<WebElement> returnOrder;
+    public WebElement returnOrder;
     @FindBy(css = "select#reasonInput")
     public WebElement reasonInput;
     @FindBy(css = "select#dropOffInput")

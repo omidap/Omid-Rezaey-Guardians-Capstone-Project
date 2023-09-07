@@ -1,4 +1,4 @@
-@regression
+@priority
 Feature: Retail Home Page
 
   Background: Verify user is on the home page
@@ -6,8 +6,8 @@ Feature: Retail Home Page
 
   @verifySidebar
   Scenario: Verify Shop by Department sidebar
-    Given User is on the retail home page
     When User click on All section
+    Given User is on the retail home page
     Then below options are present in shop by Department sidebar
       | Electronics | Computers | Smart Home | Sports | Automotive |
 
