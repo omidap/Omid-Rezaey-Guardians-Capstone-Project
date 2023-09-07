@@ -77,7 +77,7 @@ public class RetailAccountSteps extends CommonUtility {
         logger.info("User was clicked on the button successfully");
     }
 
-    @Then("a message should be displayed ‘Payment Method added successfully’")
+    @Then("a message should be displayed 'Payment Method added successfully'")
     public void aMessageShouldBeDisplayed() {
         Assert.assertTrue(factory.getAccountPage().popUpMess.isDisplayed());
         logger.info("Payment Method added successfully");

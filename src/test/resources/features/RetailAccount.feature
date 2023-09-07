@@ -23,7 +23,7 @@ Feature: Retail Account Page
       | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
       | debit      | NameOnCard | expMonth        | expYear        | CCV          |
     And User click on Add your card button
-    Then a message should be displayed ‘Payment Method added successfully’
+    Then a message should be displayed 'Payment Method added successfully'
 
   @UserEditInfo
   Scenario: Verify User can edit Debit or Credit card
